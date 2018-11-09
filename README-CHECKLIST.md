@@ -34,7 +34,8 @@
               - CreateFriendForm.js
               - UpdateFriendForm.js
               - SelectedFriend.js
-
+      1b. []  Refactor App.js
+              modify root <div>
       2. [] Create action creators
             actions/
               index.js

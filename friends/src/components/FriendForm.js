@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createFriend } from '../actions';
+import { createFriend } from '../actions/friendsActions';
 
 class FriendForm extends Component {
   state = {

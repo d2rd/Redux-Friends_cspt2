@@ -9,16 +9,16 @@ class FriendForm extends Component {
     city: '',
     email: '',
     occupation: '',
-    linkedIn: ''
+    linkedInHandle: ''
   };
   handleInputChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
 
   handleAddFriend = _ => {
-    const { name, email, occupation, linkedIn } = this.state;
-    this.props.createFriend({ name, email, occupation, linkedIn });
-    this.setState({ name: '', email: '', occupation: '', linkedin: '' });
+    const { name, email, occupation, linkedInHandle } = this.state;
+    this.props.createFriend({ name, email, occupation, linkedInHandle });
+    this.setState({ name: '', email: '', occupation: '', linkedInHandle: '' });
   };
 
   render() {
@@ -53,7 +53,7 @@ class FriendForm extends Component {
           value={this.state.linkedIn}
           name="linkedIn"
           type="text"
-          placeholder="LinkedIn URL"
+          placeholder="LinkedIn.com handle"
           onChange={this.handleInputChange}
         />
         <button onClick={() => this.handleAddFriend()} type="button">
